@@ -259,7 +259,7 @@
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://triggers.octoblu.com/flows/1c13ddb1-d767-4657-91f6-b32e7293ae39/triggers/5658ab20-437e-11e5-8831-ff0b62cba838"]]];
+    [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"replace_with_your_webhook_address"]]];
     [request setHTTPMethod:@"POST"];
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
